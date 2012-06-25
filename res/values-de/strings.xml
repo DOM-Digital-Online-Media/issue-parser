@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Drupal Issue Tracker</string>
+	<string name="tab_name_all_issues">Alle Issues</string>
+    <string name="tab_name_your_issues">Meine Issues</string>
+    <string name="tab_name_profile">Profil</string>
+    <string name="error_connection">Connection error. Please check your settings.</string>
+    <string name="loading">Laden...</string>
+    <string name="loading_header">Laden</string>
+    <string name="empty_list">Keine Issues gefunden</string>
+    <string name="empty_list_my_issues">Du folgst momentan keinen Issues</string>
+    <string name="empty_list_category">Du folgst momentan keinen Issues in der ausgewählten Kategorie</string>
+    <string name="follow">Folgen</string>
+    <string name="login">Einloggen</string>
+    <string name="logout">Ausloggen</string>
+    <string name="unfollow">Entfolgen</string>
+    <string name="error_login">Your username or password is not correct. Please try again.</string>
+    <string name="please_wait">Bitte warten...</string>
+    <string name="please_log_in">Bitte einloggen um Deine Issues zu sehen</string>
+    <string name="login_to_follow">Einloggen zum Folgen</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="setting_notify">Bei Updates meiner Issues benachrichtigen</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_pw">Passwort</string>
+    <string name="any">Alle</string>
+    <string name="filter_title">Kategorie wählen</string>
+    <string name="feature_requests">Feature requests</string>
+    <string name="support_requests">Support requests</string>
+    <string name="bug_reports">Bug reports</string>
+    <string name="tasks">Tasks</string>
+    <string name="you_are_following">Du folgst diesem Issue</string>
+    <string name="date_format">"dd.MM.yyyy kk:mm"</string>
+	<string name="list_item_date_author_string">%1$s am %2$s Uhr</string>
+	<string name="logged_in_as">Du bist als %s eingeloggt</string>
+	<string name="comments">Kommentare</string>
+	<string name="ago">vor %s</string>
+	<string name="login_for_my_issues">Bitte im Profil einloggen, um eigene Issues zu sehen</string>
+	 <string name="interval">Update Interval:</string>
+    <string name="follower_count">(%s Personen folgen diesem Issue)</string>
+    <string-array name="interval_array">
+        <item>2 Minuten</item>
+        <item>5 Minuten</item>
+        <item>15 Minuten</item>
+        <item>30 Minuten</item>
+        <item>Stündlich</item>
+        <item>2 Stunden</item>
+        <item>5 Stunden</item>
+        <item>Einmal am Tag</item>
+    </string-array>
+</resources>

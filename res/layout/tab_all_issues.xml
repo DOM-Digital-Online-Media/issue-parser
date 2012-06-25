@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/header" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ImageView02"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ImageButton01"
+            android:text="@string/tab_name_all_issues"
+            android:textColor="#fff"
+            android:textSize="20dip" android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" android:background="@drawable/button_header" android:src="@drawable/ic_shoebox" android:paddingRight="10dip" android:paddingLeft="10dip"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageButton1"
+            android:src="@drawable/header_divider" />
+
+ 
+
+        <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_header"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/ic_refresh" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ImageButton01"
+            android:src="@drawable/header_divider" />
+
+       <ProgressBar
+           android:id="@+id/progressBar1"
+           style="?android:attr/progressBarStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true" android:layout_marginLeft="13dip"/>
+
+       <ImageButton
+           android:id="@+id/ImageButton02"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/imageView1"
+           android:src="@drawable/ico_magnify_white"
+           android:background="@drawable/button_header" android:paddingLeft="10dip" android:paddingRight="10dip"/>
+
+       <ImageView
+           android:id="@+id/ImageView02"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/ImageButton02"
+           android:layout_alignParentTop="true"
+           android:src="@drawable/header_divider"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ccc" android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button1" android:layout_marginBottom="3dip" android:layout_marginLeft="3dip" android:layout_marginTop="3dip">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Button" android:layout_marginTop="3dip" android:layout_marginBottom="3dip" android:src="@drawable/ico_magnify"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:fadingEdge="none">
+    </ListView>
+
+    <TextView android:id="@android:id/empty"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center_vertical|center_horizontal"
+               android:background="#ffffff"
+               android:layout_gravity="center_vertical|center_horizontal"
+               android:text="No Issues found."/>
+    
+</LinearLayout>
